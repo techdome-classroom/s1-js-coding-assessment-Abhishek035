@@ -8,10 +8,8 @@ const getTotalIsles = function (grid) {
         return;
     }
 
-    // Mark the current land as visited by changing it to 'W'.
     grid[row][col] = 'W';
 
-    // Explore all adjacent cells (up, down, left, right).
     dfs(grid, row - 1, col); // Up
     dfs(grid, row + 1, col); // Down
     dfs(grid, row, col - 1); // Left
