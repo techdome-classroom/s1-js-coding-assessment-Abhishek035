@@ -1,4 +1,4 @@
-const decodeTheRing = function (s, p) {
+const decodeTheRing = function (message, pattern) {
 
     const m = message.length;
     const p = pattern.length;
