@@ -23,7 +23,7 @@ for (let row = 0; row < grid.length; row++) {
   }
 }
 
-console.log(islandcount)
+return islandcount
 };
 
 module.exports = getTotalIsles;
