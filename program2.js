@@ -33,8 +33,6 @@ const decodeTheRing = function (s, p) {
     }
 
     return dp[m][p];
-
-
   };
   
   module.exports = decodeTheRing;
