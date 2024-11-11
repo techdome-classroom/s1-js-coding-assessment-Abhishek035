@@ -10,10 +10,10 @@ const getTotalIsles = function (grid) {
 
     grid[row][col] = 'W';
 
-    dfs(grid, row - 1, col); // Up
-    dfs(grid, row + 1, col); // Down
-    dfs(grid, row, col - 1); // Left
-    dfs(grid, row, col + 1); // Right
+    dfs(grid, row - 1, col);
+    dfs(grid, row + 1, col);
+    dfs(grid, row, col - 1);
+    dfs(grid, row, col + 1);
 }
 for (let row = 0; row < grid.length; row++) {
   for (let col = 0; col < grid[0].length; col++) {
