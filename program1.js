@@ -15,8 +15,17 @@ const getTotalIsles = function (grid) {
     dfs(grid, row, col - 1); // Left
     dfs(grid, row, col + 1); // Right
 }
+for (let row = 0; row < grid.length; row++) {
+  for (let col = 0; col < grid[0].length; col++) {
+      // If the cell is land ('L'), it's a new island.
+      if (grid[row][col] === 'L') {
+          islandCount++;
+          dfs(grid, row, col); // Mark all connected land as visited.
+      }
+  }
+}
 
-
+return islandCount;
 };
 
 module.exports = getTotalIsles;
